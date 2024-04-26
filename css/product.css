@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
+
+:root {
+  /* text */
+  --sm-txt: 2.5vh;
+  --lg-txt: 8vh;
+  --md-txt: 3vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kode Mono", monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding: 2vw 5vw;
+  /* background-image: url(https://images.template.net/110289/free-bright-teal-background-edit-online.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: calc(18px + 1vw);
+  font-weight: 800;
+  color: #05bcff;
+}
+.logo > span {
+  color: #ff8705;
+}
+.profile-tools,
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  font-size: calc(7px + 0.5vw);
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.bor-out-0 {
+  border: none;
+  outline: none;
+  font-size: calc(7px + 0.5vw);
+  font-weight: 600;
+  background: transparent;
+}
+
+#search-border {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  padding: 0 0.5vw;
+  font-size: calc(7px + 0.5vw);
+  gap: 0.5vw;
+  border-radius: 0.8vw;
+}
+#search-border input {
+  border: none;
+  outline: none;
+  padding-left: 0.3vw;
+  background: transparent;
+}
+
+.profile-tools img {
+  border-radius: 50%;
+}
+/* nav end */
+
+.path {
+  margin: 5vh 0 2vh;
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.804);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 55vh;
+  border: 1px solid black;
+}
+.left {
+  flex-basis: 40%;
+  background-color: rgba(128, 128, 128, 0.274);
+}
+.left img {
+  width: 75%;
+  transform: rotate(35deg) translate(45px, -45px);
+  /* border: 1px solid black; */
+  z-index: -999;
+}
+.right {
+  flex-basis: 50%;
+}
+.right h1{
+    font-size: calc(18px + 2vh);
+    font-weight: 900;
+    margin-bottom: 1.5vh;
+}
+.right > p{
+    font-size: calc(10px + .3vw);
+    color: rgba(0, 0, 0, 0.605);
+}
+.price-dis{
+  width: 60%;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5vw;
+    margin: 2vh 0;
+    padding: .5vh 1vw;
+    border: 1px solid red;
+}
+.price,
+.discount{
+  flex-basis: 50%;
+  border: 1px solid black;
+}
+.price span{
+  font-size: .8vh;
+  margin-top: -.5vh;
+}
+.price p{
+  font-size: 5vh;
+}
+.text-sm{
+  font-size: 1.2vw !important;
+  font-weight: 400;
+}
