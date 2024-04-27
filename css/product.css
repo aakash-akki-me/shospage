@@ -13,6 +13,10 @@
   box-sizing: border-box;
   font-family: "Kode Mono", monospace;
 }
+body{
+  height: 100vh;
+  overflow-y: hidden;
+}
 
 ul {
   list-style: none;
@@ -103,7 +107,7 @@ main {
 }
 .left {
   flex-basis: 40%;
-  background-color: rgba(128, 128, 128, 0.274);
+  background-color: #f5f5f5;
 }
 .left img {
   width: 75%;
@@ -114,39 +118,96 @@ main {
 .right {
   flex-basis: 50%;
 }
-.right h1{
-    font-size: calc(18px + 2vh);
-    font-weight: 900;
-    margin-bottom: 1.5vh;
+.right h1 {
+  font-size: calc(22px + 2vh);
+  font-weight: 900;
+  margin-bottom: 1.5vh;
 }
-.right > p{
-    font-size: calc(10px + .3vw);
-    color: rgba(0, 0, 0, 0.605);
+.right > p {
+  font-size: calc(10px + 0.3vw);
+  color: rgba(0, 0, 0, 0.605);
 }
-.price-dis{
-  width: 60%;
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2.5vw;
-    margin: 2vh 0;
-    padding: .5vh 1vw;
-    border: 1px solid red;
+.price-dis {
+  min-width: 70%;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5vw;
+  margin: 2vh 0;
+  padding: 0.5vh 1vw;
 }
-.price,
-.discount{
-  flex-basis: 50%;
-  border: 1px solid black;
+.price{
+  flex-basis: 40%;
+  color: #0138ff;
+  background-color: #f5f5f5;
+  border-radius: 1.5vh;
+
 }
-.price span{
-  font-size: .8vh;
-  margin-top: -.5vh;
+.discount {
+  flex-basis: 60%;
 }
-.price p{
+.price span {
+  font-size: 2vh;
+  position: absolute;
+  top: 1.5vh;
+  left: 1.5vw;
+}
+.price p {
   font-size: 5vh;
+  text-align: center;
+  position: relative;
 }
-.text-sm{
-  font-size: 1.2vw !important;
-  font-weight: 400;
+.discount p {
+  font-size: 3.5vh;
+  font-weight: 700;
+  line-height: .8;
+  color: #2cd637;
+}
+.discount span {
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.585);
+}
+.quantity-btn{
+  height: 9vh;
+  display: flex;
+}
+#pices{
+  flex-basis: 10%;
+  height: 100%;
+  text-align: center;
+  margin-right: .5vw;
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  border-radius: 1vh;
+
+}
+.quantity-btn button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2vw;
+  font-weight: 600;
+  color: white;
+  background: #ff8705;
+  border: none;
+  border-radius: 1.5vh;
+}
+.slide-img{
+  display: flex;
+  /* overflow-x: scroll; */
+  justify-content: space-around;
+}
+.slide-img img{
+  height: 20vh;
+  border-radius: 1.5vh;
+  z-index: 5;
+}
+.slide-img img:active{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: scale(3);
 }
