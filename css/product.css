@@ -193,6 +193,7 @@ main {
   background: #ff8705;
   border: none;
   border-radius: 1.5vh;
+  cursor: pointer;
 }
 .slide-img{
   display: flex;
